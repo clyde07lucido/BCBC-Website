@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry Registration | BCBC Rosario</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<section class="background">
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>Bible Christian Baptist Church</h1>
+        <h2>Ministry Registration Form</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="age">Age</label>
+            <input type="text" id="age" placeholder="Enter your age" required>
+
+            <label for="contact">Contact Number</label>
+            <input type="text" id="contact" placeholder="Enter your contact number">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your email address">
+
+            <label for="ministry">Select Ministry</label>
+            <select id="ministry" required>
+                <option value="">-- Choose Ministry --</option>
+                <option>Music Ministry</option>
+                <option>Ushering Ministry</option>
+                <option>Teaching Ministry</option>
+                <option>Multimedia Ministry</option>
+                <option>Maintenance Ministry</option>
+                <option>Outreach Ministry</option>
+            </select>
+
+            <label for="reason">Why do you want to join?</label>
+            <textarea id="reason" rows="4" placeholder="Write your reason here..."></textarea>
+            
+            <button type="submit">Submit Registration</button>
+        </form>
+        <div class="back">
+        <a href="ministries.html">Go Back</a>
+        </div>
+    </div>
+</section>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const ministryValue = params.get("ministry");
+
+    if (ministryValue) {
+        const select = document.getElementById("ministry");
+        select.value = ministryValue;
+    }
+</script>
+
+</body>
+</html>

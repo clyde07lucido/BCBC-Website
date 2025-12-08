@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 550px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.background {
+    background-image:url('CHURCH.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 25, 45, 0.75);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 7px;
+    margin-bottom: 16px;
+}
+
+.size-box {
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.size-box input {
+    display: none;
+}
+
+.size-box span {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #fff;
+    min-width: 42px;
+    text-align: center;
+}
+
+.size-box:hover span {
+    background: #e6e6e6;
+}
+
+.size-box input:checked + span {
+    background: #333;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.back a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}

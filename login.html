@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BCBC Rosario</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<section class="background">
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>Bible Christian Baptist Church</h1>
+        <h2>Member Login</h2>
+
+        <form action="login.php" method="POST">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="forgot">
+                <a href="forgot.html">Forgot Password?</a>
+            </div>
+
+            <button type="submit">Log In</button>
+        </form>
+
+
+        <div class="google-login">
+            <img src="google.png" alt="Google Login">
+            <p>Log in with Google</p>
+        </div>
+
+        <div class="signup">
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+
+        <div class="back">
+            <a href="home.html">Go Back</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

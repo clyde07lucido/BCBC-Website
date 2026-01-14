@@ -6,7 +6,7 @@ $full_name = isset($_SESSION['user']) ? $_SESSION['user'] : null;
 $page = isset($_GET['page']) ? $_GET['page'] : 'home.html';
 
 
-$allowed_pages = ['home.html','about.html','ministries.html','events.html','merchandise.html','prayer.html'];
+$allowed_pages = ['index.html', 'about.html', 'ministries.html', 'events.html', 'merchandise.html','prayer.html', 'register.html', 'reserve.html'];
 if (!in_array($page, $allowed_pages)) {
     die("Page not found.");
 }

@@ -1,0 +1,45 @@
+BCBC/
+    admin/
+        admin_dashboard.php
+
+    assets/
+        css/
+            about.css
+            event.css
+            index.css
+            login.css
+            merhcandise.css
+            ministries.css
+            prayer.css
+            register.css
+            reserve.css
+            signup.css
+
+        images/
+            all images
+
+    public/
+        about.html
+        events.html
+        ministries.html
+        merchandise.html
+        ministries.html
+        prayer.html
+        register.html
+        reserve.html
+        signup.html
+
+    server/
+        bcbc_database.sql
+        db.php
+        delete_record.php
+        edit_record.php
+        loadpage.php
+        login.php
+        logout.php
+        signup.php
+        sumbit_prayer.php
+        submit_registration.php
+        submit_reservation.php
+    
+        index.html

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ministry Registration | BCBC Rosario</title>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
@@ -14,21 +15,21 @@
     <div class="container">
         <h1>Bible Christian Baptist Church</h1>
         <h2>Ministry Registration Form</h2>
-        <form>
+        <form action="submit_registration.php" method="POST">
             <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter your full name" required>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
             <label for="age">Age</label>
-            <input type="text" id="age" placeholder="Enter your age" required>
+            <input type="text" id="age" name="age" placeholder="Enter you age" required >
 
             <label for="contact">Contact Number</label>
-            <input type="text" id="contact" placeholder="Enter your contact number">
+            <input type="text" id="contact" name="contact" placeholder="Enter your number">
 
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Enter your email address">
+            <input type="text" id="email" name="email" placeholder="Enter your email (optional)">
 
             <label for="ministry">Select Ministry</label>
-            <select id="ministry" required>
+            <select id="ministry" name="ministry" required>
                 <option value="">-- Choose Ministry --</option>
                 <option>Music Ministry</option>
                 <option>Ushering Ministry</option>
@@ -39,12 +40,13 @@
             </select>
 
             <label for="reason">Why do you want to join?</label>
-            <textarea id="reason" rows="4" placeholder="Write your reason here..."></textarea>
-            
+            <textarea id="reason" name="reason" rows="4" placeholder="Enter your reason"></textarea>
+
             <button type="submit">Submit Registration</button>
         </form>
+
         <div class="back">
-        <a href="ministries.html">Go Back</a>
+        <a href="loadpage.php?page=ministries.html">Go Back</a>
         </div>
     </div>
 </section>

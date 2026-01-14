@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservation | BCBC Rosario</title>
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="reserve.css">
 </head>
 <body>
@@ -14,59 +15,54 @@
     <div class="container">
         <h1>Bible Christian Baptist Church</h1>
         <h2>Reservation Form</h2>
-        <form>
+        <form action="submit_reservation.php" method="POST">
             <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter your full name" required>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
             <label for="contact">Contact Number</label>
-            <input type="text" id="contact" placeholder="Enter your contact number (optional)">
+            <input type="text" id="contact" name="contact" placeholder="Enter your number (optional)">
 
             <label for="merch">Select Merch</label>
-            <select id="merch" required>
+            <select id="merch" name="merch" required>
                 <option value="">-- Choose Merch --</option>
                 <option>BCBC Cares</option>
                 <option>BCBC Polo</option>
                 <option>BCBC Place to Be</option>
             </select>
 
-            <label for="size">Select Size</label>
+            <label>Select Size</label>
             <div class="size-options">
                 <label class="size-box">
-                    <input type="radio" name="size" value="S" required>
-                    <span>S</span>
+                    <input type="radio" name="size" value="S" required> <span>S</span>
                 </label>
                 <label class="size-box">
-                    <input type="radio" name="size" value="M">
-                    <span>M</span>
+                    <input type="radio" name="size" value="M"> <span>M</span>
                 </label>
                 <label class="size-box">
-                    <input type="radio" name="size" value="L">
-                    <span>L</span>
+                    <input type="radio" name="size" value="L"> <span>L</span>
                 </label>
                 <label class="size-box">
-                    <input type="radio" name="size" value="XL">
-                    <span>XL</span>
+                    <input type="radio" name="size" value="XL"> <span>XL</span>
                 </label>
                 <label class="size-box">
-                    <input type="radio" name="size" value="2XL">
-                    <span>2XL</span>
+                    <input type="radio" name="size" value="2XL"> <span>2XL</span>
                 </label>
                 <label class="size-box">
-                    <input type="radio" name="size" value="3XL">
-                    <span>3XL</span>
+                    <input type="radio" name="size" value="3XL"> <span>3XL</span>
                 </label>
             </div>
 
             <label for="qty">Quantity</label>
-            <input type="number" id="qty" name="qty" min="1" max="99" value="1" required>
+            <input type="number" id="qty" name="qty" placeholder="Enter quantity" required min="1">
 
             <label for="reason">Note</label>
-            <textarea id="reason" rows="4" placeholder="Write your note here..."></textarea>
-            
+            <textarea id="reason" name="note" rows="4" placeholder="Enter your note"></textarea>
+
             <button type="submit">Submit Reservation</button>
         </form>
+
         <div class="back">
-        <a href="merchandise.html">Go Back</a>
+        <a href="loadpage.php?page=merchandise.html">Go Back</a>
         </div>
     </div>
 </section>
